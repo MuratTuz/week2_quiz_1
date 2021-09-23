@@ -1,0 +1,21 @@
+html {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1em;
+}
+body {
+  padding: 20px;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+header div {
+  width: 200px;
+  height: 20px;
+  background-color: black;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
