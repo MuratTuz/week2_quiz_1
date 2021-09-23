@@ -21,70 +21,72 @@
                 <legend>
                     <strong> Personal Data </strong>
                 </legend>
-                <div>
+                <div class="text-field">
                     <label for="title">Title</label>
                     <input type="text" id="title" name="fname">
                 </div>
-                <div>
+                <div class="text-field">
                     <label for="fname">First name</label>
                     <input type="text" id="fname" name="fname">
                 </div>
-                <div>
+                <div class="text-field">
                     <label for="lname">Last name</label>
                     <input type="text" id="lname" name="fname">
                 </div>
-                <div>
+                <div class="text-field">
                     <label for="m-f">Gender</label>
-                    <div class="gender">
+                    <div class="radio-group">
+                        <input type="radio" id="male" name="g-radio" value="M" />
                         <label for="male">M</label>
-                        <input type="radio" id="male" name="radio" value="M" />
+                        <input type="radio" id="female" name="g-radio" value="F" />
                         <label for="female">F</label>
-                        <input type="radio" id="female" name="radio" value="F" />
                     </div>
-                </div>
-
+                    </div>
+                    <div class="text-field">
+                        <label for="lang">Language</label>
+                        <div class="radio-group">
+                            <input type="radio" id="de" name="l-radio" value="de" />
+                            <label for="de">DE</label>
+                            <input type="radio" id="fr" name="l-radio" value="fr" />
+                            <label for="fr">FR</label>
+                            <input type="radio" id="it" name="l-radio" value="it" />
+                            <label for="it">IT</label>
+                        </div>
+                    </div>
             </fieldset>
             <fieldset>
                 <legend>
                     <strong> Contact Info </strong>
                 </legend>
-                <div>
+                <div class="text-field">
                     <label for="tel">Telephone</label>
                     <input type="text" id="tel" name="tel">
                 </div>
-                <div>
+                <div class="text-field">
                     <label for="mobile">Mobile</label>
                     <input type="text" id="fname" name="mobile">
                 </div>
-                <div>
+                <div class="text-field">
                     <label for="mnember">Main Number</label>
                     <input type="text" id="mnumber" name="mnumber">
                 </div>
-                <div>
-                
-                
-                </div>
-
             </fieldset>
             <fieldset>
                 <legend>
                     <strong> Address </strong>
                 </legend>
-                <div>
+                <div class="text-field">
                     <label for="firm">Firm</label>
                     <input type="text" id="firm" name="firm">
                 </div>
-                <div>
+                <div class="text-field">
                     <label for="homepage">Home Page</label>
                     <input type="text" id="homepage" name="homepage">
                 </div>
-                <div>
+                <div class="text-field">
                     <label for="address">Address</label>
                     <input type="text" id="address" name="address">
                 </div>
-                <div>
-
-
             </fieldset>
         </form>
     </main>
