@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;
+}
 html {
   font-family: "Courier New", Courier, monospace;
   font-size: 1em;
@@ -10,6 +13,7 @@ header {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+
 }
 header div {
   width: 200px;
@@ -20,9 +24,16 @@ form {
   display: flex;
   flex-direction: column;
 }
-fieldset {
+fieldset, header {
   border: none;
-  padding: 0;
+  padding: 3px 0;
+  border-bottom: 2px solid red;
+}
+fieldset:last-child{
+  border: none;
+}
+legend{
+  padding: 3px 0;
 }
 fieldset > div {
   margin: 10px 0;
@@ -30,50 +41,35 @@ fieldset > div {
   flex-direction: row;
   justify-content: space-between;
 }
+.gender {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
  input[type="radio"] {
-	 box-sizing: border-box;
-   appearance: none;
-   background: wheat;
-   outline: 2px solid black;
-   border: 3px solid wheat;
-   width: 50px;
-   height: 1rem;
+   display: none;
+   margin: 0;
 }
- input[type="radio"]:checked {
-	 background-color: red;
-}
-label{
+
+.gender label{
   display: inline-block;
+  cursor: pointer;
+  margin: 0;
+  height: 1rem;
+  width: 50px;
+  border-radius: 5%;
+  border: 1px solid black;
+  text-align: center;
+  background-color: blueviolet;
+}
+input[type="radio"]:checked + .gender label {
+  background-color: red;
 }
 
-
-/*   
-	 transform: translate(0, 60px);
-
-	 transition: all 300ms ease;
-	 font-size: 1.5em;
-	 user-select: none;
-	 color: #007e90;
-}
-span:before {
-	 font-size: 1.2em;
-	 font-family: FontAwesome;
-	 display: block;
-	 transform: translateY(-80px);
-	 opacity: 0;
-	 transition: all 300ms ease-in-out;
-	 font-weight: normal;
-	 color: white;
-}
- .span-male span:before {
-	 content: "M";
-}
- .span-famale span:before {
-	 content: "F";
-}
-span:after {
-	 content: "\f0e7";
-	 font-family: FontAwesome;
-	 color: blue;
+/*
+* {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
 }
 */
