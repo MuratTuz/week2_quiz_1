@@ -4,6 +4,7 @@ html {
 }
 body {
   padding: 20px;
+  width: 35%;
 }
 header {
   display: flex;
@@ -19,3 +20,60 @@ form {
   display: flex;
   flex-direction: column;
 }
+fieldset {
+  border: none;
+  padding: 0;
+}
+fieldset > div {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+ input[type="radio"] {
+	 box-sizing: border-box;
+   appearance: none;
+   background: wheat;
+   outline: 2px solid black;
+   border: 3px solid wheat;
+   width: 50px;
+   height: 1rem;
+}
+ input[type="radio"]:checked {
+	 background-color: red;
+}
+label{
+  display: inline-block;
+}
+
+
+/*   
+	 transform: translate(0, 60px);
+
+	 transition: all 300ms ease;
+	 font-size: 1.5em;
+	 user-select: none;
+	 color: #007e90;
+}
+span:before {
+	 font-size: 1.2em;
+	 font-family: FontAwesome;
+	 display: block;
+	 transform: translateY(-80px);
+	 opacity: 0;
+	 transition: all 300ms ease-in-out;
+	 font-weight: normal;
+	 color: white;
+}
+ .span-male span:before {
+	 content: "M";
+}
+ .span-famale span:before {
+	 content: "F";
+}
+span:after {
+	 content: "\f0e7";
+	 font-family: FontAwesome;
+	 color: blue;
+}
+*/
