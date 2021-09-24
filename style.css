@@ -7,18 +7,12 @@ html {
 }
 body {
   padding: 20px;
-  width: 35%;
+  width: 35rem;
 }
 
-header {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-
-}
 header div {
-  width: 200px;
-  height: 20px;
+  height: 1.5rem;
+  width: 15rem;
   background-color: black;
 }
 
@@ -35,38 +29,47 @@ fieldset:last-child{
   border: none;
 }
 legend{
-  padding: 3px 0;
+  padding: 10px 0;
 }
-
-label, input[type="text"] {
-  display: inline-block;
-  flex: 1 1 1;
+input:not(input[type="submit"]){
+  border: 0 none;
+  outline: none;
+  border-bottom: 1px solid black;
+}
+/*
+label, input:not(input[type="radio"], 
+input[type="submit"] .address){
   width: 100%;
   max-width: 100%;
-}
+}*/
 
-.text-field {
-  margin: 10px 0;
+
+.gender-group,
+.language-group{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-
-}
-.radio-group{
-  flex: 1 1 1;
-  width: 100%;
-  max-width: 100%;
-  display: inline-flex;
-  flex-direction: row;
   justify-content: center;
-  margin: 0;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
-.radio-group label{
-  display: inline-block;
+.gender-group label{
+  display: block;
   cursor: pointer;
+  width: 50%;
   margin: 0;
-  height: 1.2rem;
+  line-height: 2rem;
+  border-radius: 5%;
+  border: 1px solid black;
+  text-align: center;
+  background-color: wheat;
+}
+.language-group label{
+  display: block;
+  cursor: pointer;
+  width: 33%;
+  margin: 0;
+  line-height: 2rem;
   border-radius: 5%;
   border: 1px solid black;
   text-align: center;
@@ -79,9 +82,54 @@ input[type="radio"] {
 input[type="radio"]:checked + label {
   border-bottom: 5px solid red;
 }
+fieldset{
+  margin: 10px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+fieldset:not(:last-child) > *{
+  flex: 1 0 30rem;
+  margin: 10px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+fieldset:last-child{
+  flex-direction: row-reverse;
+}
+fieldset > div > *{
+  display: block;
+  flex: 1 0 10rem;
+}
+.address-group{
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0;
+  overflow: hidden;
+}
+.address-group input[type="text"]{
+  flex: 1 0 80%;
+}
+.address-group input[type="number"]{
+  flex: 1 0 15%;
+  margin-left: 5px;
+}
 
-
-
+input[type="submit"]{
+  display: block;
+  margin:20px;
+  width: 20%;
+  height: 2rem;
+  background-color: red;
+  color: white;
+  border-radius: 5%;
+}
 /*
 * {
   background: #000 !important;
